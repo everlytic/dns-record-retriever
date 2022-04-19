@@ -26,7 +26,7 @@ class Dig extends Handler
 
         return $this->transform(
             $type,
-            $this->parseOutput($process->getOutput())
+            $this->parseOutput(trim($process->getOutput()))
         );
     }
 
