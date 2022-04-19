@@ -9,7 +9,7 @@ class A extends Record
 {
     protected $ip;
 
-    public static function parse(string $line): ?self
+    public static function parse(string $line)
     {
         $attributes = static::lineToArray($line, 5);
 

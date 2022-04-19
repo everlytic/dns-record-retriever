@@ -13,7 +13,7 @@ class CAA extends Record
     protected $tag;
     protected $value;
 
-    public static function parse(string $line): ?self
+    public static function parse(string $line)
     {
         $attributes = static::lineToArray($line, 7);
 
