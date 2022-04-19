@@ -11,7 +11,7 @@ class MX extends Record
     protected $pri;
     protected $target;
 
-    public static function parse(string $line): ?self
+    public static function parse(string $line)
     {
         $attributes = static::lineToArray($line, 6);
 

@@ -9,7 +9,7 @@ class TXT extends Record
 {
     protected $txt;
 
-    public static function parse(string $line): ?self
+    public static function parse(string $line)
     {
         $attributes = static::lineToArray($line, 5);
 
