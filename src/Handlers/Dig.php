@@ -39,7 +39,7 @@ class Dig extends Handler
         $process = new Process($digPath . ' -v 2>&1');
         $process->run();
 
-        if (str_contains($process->getOutput(), 'not found')) {
+        if (strpos($process->getOutput(), 'not found') !== false) {
             return false;
         }
 
